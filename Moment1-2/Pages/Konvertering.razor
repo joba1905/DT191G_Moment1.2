@@ -1,5 +1,38 @@
 ﻿@page "/convert"
+@code {
+    private double? meter;
+    private double feet;
+    private double result1;
+
+    private double? kilometer;
+    private double mph;
+    private double result2;
+
+    private void MetertoFeet()
+    {
+        feet = 3.2808399 * (int)(meter);
+        result1 = Math.Round(feet, 1);
+    }
+
+    private void KmtoMph()
+    {
+        mph = 0.6214 * (int)(kilometer);
+        result2 = Math.Round(mph);
+    }
+}
+
+<PageTitle>Konvertering - Moment 1.2</PageTitle>
 
 <h1>Konvertering</h1>
 
-<p>Konvertera saker här.</p>
+<h2>Meter till feet</h2>
+
+<p><input type="number" @bind="meter" /> meter = @result1 feet</p>
+<button class="btn" @onclick="MetertoFeet">Omvandla</button>
+
+<br />
+
+<h2>Km/h till mph</h2>
+
+<p><input type="number" @bind="kilometer" /> km/h = @result2 mph</p>
+<button class="btn" @onclick="KmtoMph">Omvandla</button>

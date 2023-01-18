@@ -2,15 +2,18 @@
     box-sizing: border-box;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 160%;
     background-color: rgb(36, 35, 35);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 h1, h2, b, thead {
@@ -35,10 +38,6 @@ header {
     padding: 20px;
     margin-left: 10px;
     font-weight: 700;
-}
-
-.date b {
-    color: rgb(219, 219, 212);
 }
 
 .container {
@@ -78,20 +77,33 @@ a:hover {
 .main {
     width: 100%;
     background-color: rgb(26, 26, 28);
-    padding: 0 40px 0 40px;
+    padding: 0 40px 20px 40px;
 }
 
-li {
+input {
+    width: 70px;
+    background-color: rgb(36, 35, 35);
     color: rgb(219, 219, 212);
+    border: none;
+    font-size: 18px;
 }
 
-    li:nth-child(even) {
-        color: rgb(166, 166, 160);
-    }
+.btn {
+    display: block;
+    background-color: rgb(240, 193, 5);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btn:hover {
+    color: white;
+    cursor: pointer;
+}
 
 .tablecontainer {
     width: 100%;
-    border: 2px solid red;
 }
 
 table {

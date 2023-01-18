@@ -16,6 +16,8 @@
     }
 }
 
+<PageTitle>JSON - Moment 1.2</PageTitle>
+
 <h1>JSON</h1>
 
 <h2>Kurslista</h2>
@@ -26,23 +28,25 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Kurskod</th>
-                <th>Kursnamn</th>
-                <th>Progression</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var course in courselist)
-            {
+    <div class="tablecontainer">
+        <table>
+            <thead>
                 <tr>
-                    <td>@course.code</td>
-                    <td>@course.name</td>
-                    <td>@course.prog</td>
+                    <th>Kurskod</th>
+                    <th>Kursnamn</th>
+                    <th>Progression</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var course in courselist)
+                {
+                    <tr>
+                        <td>@course.code</td>
+                        <td>@course.name</td>
+                        <td>@course.prog</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }

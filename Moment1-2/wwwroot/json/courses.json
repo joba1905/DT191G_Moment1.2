@@ -13,5 +13,40 @@
     "code": "DT173G",
     "name": "Webbutveckling III",
     "prog": "B"
+  },
+  {
+    "code": "DT086G",
+    "name": "Webbanvändbarhet",
+    "prog": "B"
+  },
+  {
+    "code": "DT084G",
+    "name": "Introduktion Javascript",
+    "prog": "A"
+  },
+  {
+    "code": "DT003G",
+    "name": "Databaser",
+    "prog": "A"
+  },
+  {
+    "code": "DT197G",
+    "name": "Webbdesign för CMS",
+    "prog": "B"
+  },
+  {
+    "code": "DT163G",
+    "name": "Digital bildbehandling för webb",
+    "prog": "A"
+  },
+  {
+    "code": "IG060G",
+    "name": "Projektledning",
+    "prog": "A"
+  },
+  {
+    "code": "DT193G",
+    "name": "Fullstack-utveckling med ramverk",
+    "prog": "B"
   }
 ]

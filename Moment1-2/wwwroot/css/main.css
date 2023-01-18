@@ -80,6 +80,21 @@ a:hover {
     padding: 0 40px 20px 40px;
 }
 
+.component {
+    background-color: rgb(36, 35, 35);
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+}
+
+.date {
+    color: rgb(219, 219, 212);
+}
+
+.component-text {
+    font-style: italic;
+}
+
 input {
     width: 70px;
     background-color: rgb(36, 35, 35);
@@ -142,6 +157,10 @@ footer p {
 
     .sidenav {
         margin-right: 0;
+    }
+
+    .component {
+        width: auto;
     }
 
     nav {
